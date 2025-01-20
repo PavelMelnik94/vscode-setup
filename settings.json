@@ -1,0 +1,647 @@
+{
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "ejs",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown"
+  ], // Автоматическое закрытие тегов для этих языков
+  "diffEditor.ignoreTrimWhitespace": true, // Игнорировать пробелы при сравнении файлов
+  "diffEditor.renderIndicators": true, // Отображение индикаторов различий
+  "diffEditor.diffAlgorithm": "advanced", // Использовать алгоритм сравнения "advanced"
+  "diffEditor.renderSideBySide": true, // Отображение различий в виде двух сторон
+
+  "workbench.startupEditor": "none", // Не открывать редактор при запуске
+  "workbench.colorCustomizations": {
+    "editorError.foreground": "#FF0000",
+    "editorWarning.foreground": "#FF9933",
+    "editorInfo.foreground": "#00AA00",
+    "terminal.background": "#002B36",
+    "terminal.foreground": "#93A1A1",
+    "terminalCursor.background": "#93A1A1",
+    "terminalCursor.foreground": "#93A1A1",
+    "terminal.ansiBlack": "#002B36",
+    "terminal.ansiBlue": "#268BD2",
+    "terminal.ansiBrightBlack": "#657B83",
+    "terminal.ansiBrightBlue": "#268BD2",
+    "terminal.ansiBrightCyan": "#2AA198",
+    "terminal.ansiBrightGreen": "#859900",
+    "terminal.ansiBrightMagenta": "#6C71C4",
+    "terminal.ansiBrightRed": "#DC322F",
+    "terminal.ansiBrightWhite": "#FDF6E3",
+    "terminal.ansiBrightYellow": "#B58900",
+    "terminal.ansiCyan": "#2AA198",
+    "terminal.ansiGreen": "#859900",
+    "terminal.ansiMagenta": "#6C71C4",
+    "terminal.ansiRed": "#DC322F",
+    "terminal.ansiWhite": "#93A1A1",
+    "terminal.ansiYellow": "#B58900"
+  },
+  "workbench.iconTheme": "symbols", // зовать тему иконок
+  "editor.autoClosingBrackets": "always", // Всегда автоматически закрывать скобки
+  "editor.accessibilitySupport": "off", // Отключить поддержку доступности
+  "editor.renderControlCharacters": false, // Не отображать управляющие символы
+  "editor.lineNumbers": "on", // Включить отображение номеров строк
+  "editor.fontLigatures": false, // Отключить лигатуры шрифта
+  "editor.acceptSuggestionOnEnter": "smart", // Применять предложения при нажатии Enter умным способом
+  "editor.showUnused": true, // Показать неиспользуемые переменные и функции
+  "editor.tabCompletion": "on", // Включить автозаполнение для табуляции
+  "editor.formatOnPaste": false, // Не форматировать код при вставке
+  "editor.formatOnSave": true, // Форматировать код при сохранении
+  "editor.formatOnType": false, // Не форматировать код при наборе
+  "editor.linkedEditing": true, // Включить связанное редактирование
+  "editor.minimap.enabled": false, // Отключить мини-карту
+  "editor.multiCursorModifier": "alt", // Использовать Alt для множественного курсора
+  "editor.tabSize": 2, // Установить размер табуляции на 2 пробела
+  "editor.wordWrap": "on", // Включить автоматический перенос слов
+  "editor.fontSize": 15, // Установить размер шрифта на 15
+  "editor.fontFamily": "Lilex Nerd Font", // Использовать шрифт "Lilex Nerd Font"
+  "editor.lineHeight": 22, // Установить высоту строки на 22
+  "editor.fontWeight": 500, // Установить вес шрифта на 500
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit", // Автоматическое исправление всех ошибок при сохранении
+    "source.organizeImports": "explicit" // Автоматическая организация импортов при сохранении
+  },
+  "editor.codeLens": true, // Включить отображение CodeLens
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features", // Форматировать CSS с помощью встроенного формата
+    "editor.snippetSuggestions": "inline",
+
+  },
+  "[scss]": {
+    "editor.snippetSuggestions": "inline"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматировать XML с помощью Prettier
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features" // Форматировать HTML с помощью встроенного формата
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматировать JavaScript с помощью Prettier
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features" // Форматировать Markdown с помощью встроенного формата
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" // Форматировать TypeScript с помощью Prettier и ESLint
+  },
+  "javascript.preferGoToSourceDefinition": true, // Предпочитать переход к исходной реализации для JavaScript
+  "javascript.inlayHints.functionLikeReturnTypes.enabled": true, // Включить подсказки типов для возвращаемых значений в JavaScript
+  "javascript.inlayHints.parameterTypes.enabled": true, // Включить подсказки типов для параметров в JavaScript
+  "javascript.inlayHints.propertyDeclarationTypes.enabled": true, // Включить подсказки типов для свойств в JavaScript
+  "javascript.updateImportsOnFileMove.enabled": "always", // Автоматически обновлять импорты при перемещении файлов в JavaScript
+  "typescript.preferGoToSourceDefinition": true, // Предпочитать переход к исходной реализации для TypeScript
+  "typescript.updateImportsOnFileMove.enabled": "always", // Автоматически обновлять импорты при перемещении файлов в TypeScript
+  "typescript.preferences.preferTypeOnlyAutoImports": true, // Предпочитать автозаполнение только типов для TypeScript
+  "typescript.suggest.completeFunctionCalls": true, // Предлагать автозаполнение для вызова функций в TypeScript
+  "typescript.implementationsCodeLens.enabled": true, // Включить CodeLens для реализаций в TypeScript
+  "git.ignoreMissingGitWarning": true, // Игнорировать предупреждение о недостающем репозитории Git
+  "git-graph.repository.commits.fetchAvatars": true, // Загружать аватары для коммитов в Git Graph
+  "git.enableSmartCommit": true, // Включить интеллектуальное подтверждение коммитов
+  "git.autofetch": true, // Включить автоматическое извлечение данных для Git
+  "explorer.confirmDelete": false, // Не подтверждать удаление файлов в проводнике
+  "explorer.confirmDragAndDrop": false, // Не подтверждать перетаскивание файлов
+  "explorer.confirmPasteNative": false, // Не подтверждать вставку файлов
+  "explorer.compactFolders": false, // Отключить компактное отображение папок
+  "terminal.integrated.fontFamily": "monospace", // Установить моноширинный шрифт для терминала
+  "terminal.integrated.defaultProfile.windows": "Git Bash", // Установить профиль по умолчанию для Windows как Git Bash
+  "terminal.integrated.stickyScroll.enabled": true, // Включить прокрутку терминала
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack", // Установить цвет вкладок терминала по умолчанию
+  "terminal.integrated.fontWeight": "600", // Установить вес шрифта терминала на 500
+  "terminal.integrated.gpuAcceleration": "on", // Включить ускорение GPU для терминала
+  "files.exclude": {
+    "**/.git": false // Не скрывать директорию .git
+  },
+  "files.trimTrailingWhitespace": true, // Удалять пробелы в конце строк
+  "files.autoSave": "off", // Автосохранение при изменении фокуса
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Изменить выбор предложений в редакторе
+  "breadcrumbs.enabled": false, // Отключить хлебные крошки
+  "eslint.enable": true, // Включить ESLint
+  "github.copilot.enable": {
+    "*": true, // Включить GitHub Copilot для всех файлов
+    "plaintext": true, // Включить GitHub Copilot для текстовых файлов
+    "markdown": true, // Отключить GitHub Copilot для Markdown файлов
+    "scminput": false, // Отключить GitHub Copilot для ввода в SCM
+  },
+  "vsicons.dontShowNewVersionMessage": true, // Отключить сообщение о новой версии для VSIcons
+  "gitlens.views.worktrees.files.layout": "list", // Отображать рабочие деревья в виде списка
+  "window.zoomLevel": -1, // Уменьшить масштаб окна на 1 уровень
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true // Разрешить выделение юникода для русского языка
+  },
+  "github.copilot.editor.enableAutoCompletions": true, // Включить автозавершение для GitHub Copilot в редакторе
+  "files.eol": "\n", // Установить символ окончания строки на "\n"
+  "window.confirmSaveUntitledWorkspace": false, // Не запрашивать подтверждение при сохранении безымянного рабочего пространства
+  "git.confirmSync": false, // Отключить подтверждение синхронизации Git
+  "editor.cursorBlinking": "phase", // Установить мигание курсора на фазовое
+  "editor.cursorSmoothCaretAnimation": "on", // Включить плавную анимацию курсора
+  "editor.cursorStyle": "block", // Установить стиль курсора на блок
+  "workbench.colorTheme": "Solarized Osaka", // Установить цветовую тему редактора на "Better Solarized Dark Italics"
+  "editor.suggestSelection": "first", // Предпочитать первое предложение из списка автозаполнения
+  "editor.suggest.matchOnWordStartOnly": true, // Осуществлять поиск совпадений только по началу слова
+  "editor.suggest.filterGraceful": true, // Фильтровать предложения по грациозности
+  "editor.wordBasedSuggestions": "off", // Отключить предложения на основе слов
+  "editor.suggest.showWords": false, // Отключить показ слов в предложениях
+  "workbench.productIconTheme": "macos-modern", // Установить тему иконок продукта на "macos-modern"
+  "emmet.includeLanguages": {
+    "javascript": "none", // Отключить поддержку Emmet для JavaScript
+    "typescript": "none" // Отключить поддержку Emmet для TypeScript
+  },
+  "editor.quickSuggestionsDelay": 100, // Установка задержки для быстрых предложений (ms)
+  "files.associations": {
+    "*.jsx": "javascriptreact", // Ассоциация .jsx с javascriptreact
+    "*.tsx": "typescriptreact", // Ассоциация .tsx с typescriptreact
+    "*.ts": "typescript", // Ассоциация .ts с typescript
+    "*.js": "javascript", // Ассоциация .js с javascript
+    "*.jsonc": "jsonc", // Ассоциация .jsonc с jsonc
+    "*.json": "jsonc", // Ассоциация .json с jsonc
+    "*.module.css": "css", // Ассоциация .module.css с css
+    "*.module.scss": "scss", // Ассоциация .module.scss с scss
+    "*.component.css": "css", // Ассоциация .component.css с css
+    "*.component.scss": "scss", // Ассоциация .component.scss с scss
+    "*.style.css": "css", // Ассоциация .style.css с css
+    "*.style.scss": "scss" // Ассоциация .style.scss с scss
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Использование Prettier как форматтера по умолчанию для всех файлов
+  "editor.parameterHints.enabled": true, // Включение подсказок для параметров
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": false, // Включение пользовательских цветовых настроек для семантических токенов
+    "rules": {
+      "variable": "#FFA500", // Цвет для переменных
+      "function": "#00FF00", // Цвет для функций
+      "keyword": "#FF0000", // Цвет для ключевых слов
+      "parameter": "#ff0000", // Цвет для параметров
+      "property": "#0000FF", // Цвет для свойств
+      "operator": "#FF00FF", // Цвет для операторов
+      "string": "#FFFF00", // Цвет для строк
+      "number": "#00FFFF", // Цвет для чисел
+      "comment": "#808080", // Цвет для комментариев
+      "punctuation": "#FFFFFF", // Цвет для знаков препинания
+      "tag": "#FF00FF", // Цвет для тегов
+      "attribute": "#FFFF00", // Цвет для атрибутов
+      "builtin": "#00FF00", // Цвет для встроенных функций
+      "namespace": "#FFA500", // Цвет для пространств имен
+      "enumMember": "#FF0000", // Цвет для элементов перечисления
+      "type": "#0000FF", // Цвет для типов
+      "functionVariable": "#FF00FF", // Цвет для переменных функций
+      "variable.readonly": "#00FFFF", // Цвет для только для чтения переменных
+      "string.escape": "#FFA500", // Цвет для экранированных строк
+      "keyword.control": "#00FF00", // Цвет для управляющих ключевых слов
+      "keyword.operator": "#FF0000", // Цвет для операторов ключевых слов
+      "keyword.operator.new": "#FF00FF", // Цвет для новых операторов ключевых слов
+      "keyword.operator.delete": "#FFFF00", // Цвет для операторов удаления ключевых слов
+      "keyword.operator.typeof": "#00FFFF", // Цвет для операторов typeof ключевых слов
+      "keyword.operator.instanceof": "#FFA500", // Цвет для операторов instanceof ключевых слов
+      "keyword.operator.void": "#FF0000", // Цвет для операторов void ключевых слов
+      "keyword.operator.in": "#0000FF", // Цвет для операторов in ключевых слов
+      "keyword.operator.of": "#FF00FF", // Цвет для операторов of ключевых слов
+      "keyword.operator.await": "#FFFF00", // Цвет для операторов await ключевых слов
+      "keyword.operator.yield": "#00FFFF", // Цвет для операторов yield ключевых слов
+      "keyword.operator.from": "#FFA500", // Цвет для операторов from ключевых слов
+      "keyword.operator.let": "#00FF00", // Цвет для операторов let ключевых слов
+      "keyword.operator.const": "#FF0000", // Цвет для операторов const ключевых слов
+      "keyword.operator.export": "#FF00FF", // Цвет для операторов export ключевых слов
+      "keyword.operator.import": "#FFFF00", // Цвет для операторов import ключевых слов
+      "keyword.operator.default": "#00FFFF", // Цвет для операторов default ключевых слов
+      "keyword.operator.class": "#FFA500", // Цвет для операторов class ключевых слов
+      "keyword.operator.function": "#0000FF", // Цвет для операторов function ключевых слов
+      "keyword.operator.interface": "#FF00FF", // Цвет для операторов interface ключевых слов
+      "keyword.operator.type": "#FFFF00", // Цвет для операторов type ключевых слов
+      "keyword.operator.module": "#00FFFF", // Цвет для операторов module ключевых слов
+      "keyword.operator.namespace": "#FFA500", // Цвет для операторов namespace ключевых слов
+      "keyword.operator.var": "#00FF00", // Цвет для операторов var ключевых слов
+    }
+  },
+  "editor.formatOnSaveMode": "file", // Форматирование файла при сохранении
+  "editor.useTabStops": true, // Использование табуляций для отступов
+  "editor.insertSpaces": true, // Вставка пробела вместо табуляции
+  "editor.inlineSuggest.enabled": true, // Включение инлайновых предложений для автозавершений
+  "editor.snippetSuggestions": "inline", // Отображение сниппетов inline
+  "editor.foldingStrategy": "auto", // Стратегия сворачивания по отступам
+  "editor.acceptSuggestionOnCommitCharacter": true, // Принятие предложений при вводе коммит-символов
+  "editor.largeFileOptimizations": true, // Оптимизация работы с большими файлами
+  "editor.mouseWheelZoom": true, // Включение увеличения шрифта при прокрутке мышью
+  "workbench.settings.useSplitJSON": false, // Включение режима разделения JSON для настроек
+  "window.title": "Search", // Установка разделителя в заголовке окна
+  "terminal.integrated.fontSize": 16, // Размер шрифта в интегрированном терминале
+  "merge-conflict.autoNavigateNextConflict.enabled": true, // Автоматическая навигация к следующему конфликту
+  "merge-conflict.diffViewPosition": "Current", // Позиция отображения различий при конфликтах
+  "merge-conflict.decorators.enabled": true, // Включить декораторы для конфликтов
+  "merge-conflict.codeLens.enabled": true, // Включить CodeLens для конфликтов
+  "editor.inlineSuggest.suppressSuggestions": false, // Не подавлять встроенные предложения
+  "editor.experimental.asyncTokenization": true, // Асинхронная токенизация для улучшения производительности
+  "editor.suggest.preview": true, // Предварительный просмотр предложений
+  "editor.suggest.showStatusBar": true, // Показывать строку состояния для предложений
+  "js/ts.implicitProjectConfig.checkJs": true, // Проверка JavaScript файлов
+  "typescript.enablePromptUseWorkspaceTsdk": true, // Prompt для использования workspace версии TypeScript
+  "typescript.preferences.importModuleSpecifierEnding": "js", // Использовать .js или .ts окончания для импортов
+  "javascript.preferences.importModuleSpecifierEnding": "js", // Тоже для JavaScript
+  "git.mergeEditor.diffDisplayType": "unified", // Новый унифицированный вид различий
+  "git.experimental.quickDiff": true, // Экспериментальная функция быстрого просмотра различий
+  "git.pullBeforeCheckout": true, // Автоматический pull перед checkout
+  "git.branchRandomName.enable": true, // Генерация случайных имен для веток
+  "testing.automaticallyOpenPeekView": "failureAnywhere", // Автоматически открывать peek view при ошибках тестов
+  "testing.followRunningTest": true, // Следить за выполняющимся тестом
+  "testing.defaultGutterClickAction": "debug", // Действие по умолчанию при клике на gutter в тестах
+  "workbench.tree.enableStickyScroll": true, // Sticky scroll для древовидных представлений
+  "editor.stickyScroll.enabled": true, // Включить sticky scroll в редакторе
+  "workbench.experimental.layoutControl.enabled": true, // Экспериментальный контроль layout
+  "workbench.experimental.useCustomHover": true, // Использовать новые кастомные ховеры
+  // =====================================================
+  // New Accessibility Features
+  // =====================================================
+  "editor.accessibilityPageSize": 10, // Размер страницы для accessibility навигации
+  "editor.experimentalWhitespaceRendering": "svg", // Новый рендеринг пробелов
+  "editor.guides.highlightActiveIndentation": true, // Подсветка активного уровня отступов
+  // =====================================================
+  // New Debug Features
+  // =====================================================
+  "debug.autoExpandLazyVariables": "on", // Автоматическое раскрытие ленивых переменных
+  "debug.console.acceptSuggestionOnEnter": "on", // Принимать предложения в консоли отладки по Enter
+  // =====================================================
+  // New Terminal Features
+  // =====================================================
+  "terminal.integrated.shellIntegration.decorationsEnabled": "both", // Новые декорации в терминале
+  "terminal.integrated.smoothScrolling": true, // Включить инлайновые предложения Copilot
+  "github.copilot.editor.enableCodeActions": true, // Включить code actions от Copilot
+  "github.copilot.chat.localeOverride": "en", // Язык Copilot Chat
+  "github.copilot.chat.fixTestFailure.enabled": true, // Включить автоматическое исправление тестовых ошибок
+  "github.copilot.chat.edits.suggestRelatedFilesForTests": true, // Предложения для связанных файлов в тестах
+  "github.copilot.chat.reviewSelection.enabled": true,
+  "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": true, // Предложения для связанных файлов из истории Git
+  "github.copilot.advanced": {
+    "indentationMode": true, // Умный режим отступов
+    "listManager": true, // Улучшенное управление списками
+    "syntaxRecovery": true, // Восстановление синтаксиса
+    "authProvider": "github", // Использовать GitHub как поставщика аутентификации
+    "secret_key": "" // Ключ доступа для GitHub Copilot (не рекомендуется хранить в открытом виде)
+  },
+  // =====================================================
+  // Git Merge & Conflict Settings (Актуальные настройки)
+  // =====================================================
+  // Актуальные настройки Git
+  "git.mergeEditor": true, // Включить новый редактор слияния
+  "git.enableCommitSigning": false, // Подписывание коммитов
+  // Улучшенная визуализация изменений
+  "scm.diffDecorations": "all", // Показывать все декорации различий
+  "scm.diffDecorationsGutterWidth": 2, // Ширина желоба для декораций различий
+  "scm.diffDecorationsGutterVisibility": "always", // Всегда показывать желоб с различиями
+  // Интеграция с GitHub
+  "github.gitAuthentication": true, // Аутентификация GitHub
+  // Актуальные настройки интерфейса
+  "workbench.layoutControl.type": "menu", // Тип контроля layout через меню
+  "editor.hover.enabled": true, // Включить ховеры
+  "editor.hover.delay": 300, // Задержка появления ховера
+  "editor.hover.sticky": true, // Закрепляемые ховеры
+  // =====================================================
+  // Telemetry Settings (Полное отключение телеметрии)
+  // =====================================================
+  "gitlens.telemetry.enabled": false, // Отключить телеметрию GitLens
+  "editor.experimental.treeSitterTelemetry": false, // Отключить телеметрию Tree Sitter
+  "telemetry.enableTelemetry": false, // Отключить телеметрию
+  "telemetry.telemetryLevel": "off", // Полностью отключить телеметрию (новая настройка, заменяющая telemetry.enableTelemetry)
+  "workbench.enableExperiments": false, // Отключить эксперименты
+  "workbench.settings.enableNaturalLanguageSearch": false, // Отключить поиск на естественном языке
+  "npm.fetchOnlinePackageInfo": false, // Отключить загрузку информации о пакетах npm
+  "update.showReleaseNotes": false, // Отключить показ примечаний к выпуску
+  "workbench.cloudChanges.continueOn": "off", // Отключить облачные изменения
+  "aws.telemetry": false, // Отключить телеметрию AWS
+  "redhat.telemetry.enabled": false, // Отключить телеметрию Red Hat
+  "java.help.firstView": "none", // Отключить первый просмотр справки Java
+  "vs-kubernetes.telemetry": false, // Отключить телеметрию Kubernetes
+  "typescript.surveys.enabled": false, // Отключить опросы TypeScript
+  // =====================================================
+  // New UX/UI Features 2024-2025
+  // =====================================================
+  "workbench.editor.decorations.badges": true, // Новые бейджи для редактора
+  "workbench.editor.decorations.colors": true, // Новые цветовые декорации
+  "workbench.editor.languageDetection": true, // Автоматическое определение языка
+  "workbench.quickOpen.preserveInput": true, // Сохранение ввода в быстром открытии
+  "workbench.layoutControl.enabled": true, // Новый контроль layout
+  "window.customTitleBarVisibility": "default", // Новая настройка видимости пользовательской строки заголовка
+  "editor.guides.bracketPairs": "active", // Улучшенные направляющие для пар скобок
+  "editor.guides.highlightActiveBracketPair": true, // Подсветка активной пары скобок
+  "editor.guides.indentation": true, // Направляющие отступов
+  "editor.renderLineHighlightOnlyWhenFocus": true, // Подсветка строки только при фокусе
+  "editor.inlayHints.padding": true, // Отступы для встроенных подсказок
+  "editor.dropIntoEditor.enabled": true, // Улучшенное перетаскивание в редактор
+  "editor.hover.above": false, // Показывать ховер выше текста
+  "window.density.editorTabHeight": "default", // Компактная высота вкладок
+  "workbench.tree.expandMode": "doubleClick", // Режим раскрытия дерева по двойному клику
+  "workbench.editor.navigationScope": "editorGroup", // Область навигации редактора
+  "workbench.editor.titleScrollbarSizing": "large", // Размер полосы прокрутки заголовка
+  "workbench.panel.defaultLocation": "bottom", // Расположение панели по умолчанию
+  "workbench.panel.opensMaximized": "never", // Не открывать панель развернутой
+  "workbench.editor.splitInGroupLayout": "horizontal", // Вертикальное разделение в группе
+  "workbench.list.smoothScrolling": true, // Плавная прокрутка списков
+  "workbench.editor.splitSizing": "distribute", // Распределение размера при разделении
+  "editor.stickyTabStops": true, // Липкие позиции табуляции
+  "editor.suggest.insertMode": "replace", // Режим вставки предложений
+  "editor.suggest.localityBonus": true, // Бонус локальности для предложений
+  "editor.scrollBeyondLastColumn": 5, // Прокрутка за последнюю колонку
+  "editor.pasteAs.enabled": true, // Включает действия "Вставить как" в контекстном меню
+  "workbench.editor.pinnedTabsOnSeparateRow": true, // Закрепленные вкладки на отдельной строке
+  "workbench.editor.tabSizing": "shrink", // Уменьшение размера вкладок
+  // =====================================================
+  // GitHub Copilot Chat Settings 2025
+  // =====================================================
+  "github.copilot.chat.enableInlineChat": true, // Включить встроенный чат
+  "github.copilot.chat.contextCapture": true, // Использовать контекст из workspace
+  "github.copilot.chat.completionProvider": {
+    "useConversationHistory": true, // Использовать историю диалога
+    "useWorkspaceContext": true, // Использовать контекст из workspace
+    "useGitHistory": true // Использовать историю Git
+  },
+  "github.copilot.chat.codeActions": {
+    "explanation": true, // Включить объяснения кода
+    "documentation": true, // Включить генерацию документации
+    "refactoring": true, // Включить предложения по рефакторингу
+    "testing": true // Включить генерацию тестов
+  },
+  "github.copilot.chat.intelligence": {
+    "contextualAnalysis": true, // Включить контекстный анализ
+    "semanticSearch": true // Включить семантический поиск
+  },
+  "github.copilot.chat.performance": {
+    "responsiveness": "balanced", // Баланс между скоростью и качеством (fast/balanced/accurate)
+    "contextSize": "auto" // Автоматический размер контекста
+  },
+  // =====================================================
+  // GitHub Copilot Chat Settings
+  // =====================================================
+  "github.copilot.chat.experimental": { // Экспериментальные возможности чата
+    "suggestions": true, // Включить inline предложения
+    "userContext": true, // Использовать контекст из workspaces
+    "explanations": true, // Включить объяснения кода
+    "codeActions": true // Включить действия с кодом
+  },
+  // Основные настройки чата
+  "github.copilot.chat.contextMode": "auto", // Режим контекста для чата: auto, manual или disabled
+  "github.copilot.chat.historyEnabled": true, // Включить историю чата
+  "github.copilot.chat.completeSuggestionsWithCode": true, // Дополнять предложения кодом
+  "github.copilot.chat.keymap": "auto", // Режим клавиатурных сокращений,
+  "github.copilot.chat.minTokens": 100, // Минимальное количество токенов для генерации
+  "github.copilot.chat.maxTokens": 2000, // Максимальное количество токенов для генерации
+  "github.copilot.chat.debounce": 100, // Задержка перед отправкой запроса (ms)
+  "github.copilot.chat.snippetLength": "medium", // Длина сниппетов кода (short, medium, long),
+  // =====================================================
+  // Advanced Web Development Settings 2025
+  // =====================================================
+  "javascript.suggest.completeJSDocs": true, // Автодополнение JSDoc комментариев
+  "javascript.suggest.autoImports": true, // Автоматические импорты
+  "javascript.autoClosingTags": true, // Автозакрытие тегов
+  "javascript.suggest.enabled": true, // Включить предложения
+  "javascript.suggest.jsdoc.generateReturns": true, // Генерация JSDoc для возвращаемых значений
+  "javascript.suggest.includeAutomaticOptionalChainCompletions": true, // Автодополнение для опциональных цепочек
+  "javascript.preferences.quoteStyle": "single", // Использовать одинарные кавычки
+  "javascript.format.semicolons": "insert", // Всегда добавлять точку с запятой
+  "javascript.format.enable": true, // Включить форматирование JavaScript
+  "javascript.validate.enable": true, // Включить валидацию JavaScript
+  "javascript.suggestionActions.enabled": true, // Включить действия для предложений
+  "javascript.referencesCodeLens.enabled": true, // Показывать CodeLens с ссылками
+  "javascript.referencesCodeLens.showOnAllFunctions": true, // Показывать CodeLens для всех функций
+
+  // Включаем строгие проверки null для JavaScript
+  "javascript.implicitProjectConfig.strictNullChecks": true,
+  // TypeScript расширенные настройки
+  "typescript.suggest.autoImports": true, // Автоматические импорты
+  "typescript.preferences.importModuleSpecifier": "relative", // Относительные пути для импортов
+  "typescript.preferences.quoteStyle": "single", // Одинарные кавычки
+  "typescript.suggest.includeCompletionsForImports": true, // Автодополнение импортов
+  "typescript.preferences.includePackageJsonAutoImports": "on", // Автоимпорт из package.json
+  "typescript.suggest.completeJSDocs": true, // Автодополнение JSDoc комментариев
+  "typescript.preferences.useAliasesForRenames": true, // Использовать псевдонимы при переименовании
+  "typescript.referencesCodeLens.enabled": true, // CodeLens для ссылок
+  "typescript.referencesCodeLens.showOnAllFunctions": true, // CodeLens для всех функций
+  "typescript.inlayHints.enumMemberValues.enabled": true, // Подсказки для значений enum
+  "typescript.inlayHints.variableTypes.enabled": true, // Подсказки типов переменных
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true, // Подсказки типов свойств
+  "typescript.inlayHints.parameterTypes.enabled": true, // Подсказки типов параметров
+  "typescript.inlayHints.parameterNames.enabled": "all", // Подсказки имен параметров
+  // React & JSX/TSX настройки
+  "typescript.tsserver.experimental.enableProjectDiagnostics": false, // Экспериментальная диагностика проекта
+  "typescript.suggest.enabled": true, // Включить предложения
+  "typescript.validate.enable": true, // Валидация TypeScript
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  // CSS/SCSS расширенные настройки
+  "css.validate": true, // Валидация CSS
+  "scss.validate": true, // Валидация SCSS
+  "css.lint.compatibleVendorPrefixes": "warning", // Предупреждения о вендорных префиксах
+  "css.lint.duplicateProperties": "warning", // Предупреждения о дублировании свойств
+  "css.lint.emptyRules": "warning", // Предупреждения о пустых правилах
+  "scss.lint.compatibleVendorPrefixes": "warning",
+  "scss.lint.duplicateProperties": "warning",
+  "scss.lint.emptyRules": "warning",
+  "css.hover.documentation": true, // Показывать документацию при наведении
+  "css.hover.references": true, // Показывать ссылки при наведении
+  "scss.hover.documentation": true,
+  "scss.hover.references": true,
+  "css.completion.completePropertyWithSemicolon": true, // Автодополнение с точкой с запятой
+  "scss.completion.completePropertyWithSemicolon": true,
+  "css.completion.triggerPropertyValueCompletion": true, // Автодополнение значений свойств
+  "scss.completion.triggerPropertyValueCompletion": true,
+  // HTML расширенные настройки
+  "html.autoClosingTags": true, // Автозакрытие тегов
+  "html.autoCreateQuotes": true, // Автосоздание кавычек
+  "html.format.enable": true, // Включить форматирование
+  "html.format.preserveNewLines": true, // Сохранять новые строки
+  "html.format.wrapLineLength": 120, // Длина строки для переноса
+  "html.validate.scripts": true, // Валидация скриптов
+  "html.validate.styles": true, // Валидация стилей
+  "html.hover.documentation": true, // Документация при наведении
+  "html.hover.references": true, // Ссылки при наведении
+  "html.suggest.html5": true, // Предложения HTML5
+  // Prettier настройки для веб-разработки
+  "prettier.singleQuote": true, // Одинарные кавычки
+  "prettier.jsxSingleQuote": true, // Одинарные кавычки в JSX
+  "prettier.semi": true, // Точка с запятой
+  "prettier.tabWidth": 2, // Ширина табуляции
+  "prettier.trailingComma": "es5", // Висячие запятые
+  "prettier.bracketSpacing": true, // Пробелы в скобках
+  "prettier.arrowParens": "always", // Скобки для стрелочных функций
+  "prettier.proseWrap": "preserve", // Сохранение переносов строк
+  "prettier.htmlWhitespaceSensitivity": "css", // Чувствительность к пробелам HTML
+  // ESLint расширенные настройки
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.format.enable": true, // Включить форматирование ESLint
+  "eslint.lintTask.enable": true, // Включить линтинг
+  "eslint.codeActionsOnSave.mode": "problems", // Режим действий при сохранении
+  "eslint.codeAction.disableRuleComment": {
+    "enable": true,
+    "location": "separateLine" // Комментарии для отключения правил
+  },
+  // Emmet расширенные настройки для веб-разработки
+  "emmet.triggerExpansionOnTab": true, // Триггер расширения по Tab
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx"
+  },
+  "emmet.showSuggestionsAsSnippets": true, // Показывать предложения как сниппеты
+  "emmet.optimizeStylesheetParsing": true, // Оптимизация парсинга стилей
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/coverage": true,
+    "**/.yarn/**": true,
+    "**/.pnp/**": true,
+    "**/.vscode-test/**": true,
+    "**/.yarnrc.yml": true,
+    "**/.yarn-integrity": true,
+    "**/.DS_Store": true,
+    "**/tmp/**": true,
+    "**/.git": true,
+    "**/.history": true,
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/coverage/**": true,
+    "**/.yarn/**": true,
+    "**/.pnp/**": true,
+    "**/.vscode-test/**": true,
+    "**/.yarnrc.yml": true,
+    "**/.yarn-integrity": true,
+    "**/.DS_Store": true,
+    "**/tmp/**": true,
+    "**/.git": true,
+    "**/.history": true,
+  },
+  // =====================================================
+  // Advanced JSON Development Settings 2025
+  // =====================================================
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.quickSuggestions": {
+      "strings": true, // Включить быстрые предложения в строках
+      "comments": true, // Включить предложения в комментариях
+      "other": true // Включить другие предложения
+    },
+    "editor.suggestSelection": "recentlyUsed", // Предлагать недавно использованные варианты
+    "editor.suggest.insertMode": "replace", // Режим вставки предложений
+    "editor.snippetSuggestions": "top", // Показывать сниппеты вверху
+    "editor.formatOnSave": true, // Форматировать при сохранении
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit" // Исправлять все проблемы при сохранении
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.quickSuggestions": {
+      "strings": true,
+      "comments": true,
+      "other": true
+    },
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.insertMode": "replace",
+    "editor.snippetSuggestions": "inline",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
+  // JSON Language Server Settings
+  "json.format.enable": true, // Включить форматирование JSON
+  "json.validate.enable": true, // Включить валидацию JSON
+  "json.trace.server": "messages", // Трассировка сервера JSON
+  "json.maxItemsComputed": 15000, // Максимальное количество вычисляемых элементов
+  "json.format.keepLines": true, // Сохранять пустые строки при форматировании
+  // JSON Схемы и Валидация
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "package.json"
+      ],
+      "url": "https://json.schemastore.org/package.json"
+    },
+    {
+      "fileMatch": [
+        "tsconfig.json",
+        "tsconfig.*.json"
+      ],
+      "url": "https://json.schemastore.org/tsconfig.json"
+    },
+    {
+      "fileMatch": [
+        ".prettierrc",
+        ".prettierrc.json"
+      ],
+      "url": "https://json.schemastore.org/prettierrc.json"
+    },
+    {
+      "fileMatch": [
+        ".eslintrc",
+        ".eslintrc.json"
+      ],
+      "url": "https://json.schemastore.org/eslintrc.json"
+    }
+  ],
+  // =====================================================
+  // JSON Validation & Error Highlighting Settings
+  // =====================================================
+  "json.schemaDownload.enable": true, // Включить загрузку схем
+  "editor.bracketPairColorization.enabled": true, // Подсветка парных скобок
+  "editor.language.brackets": [
+    [
+      "[",
+      "]"
+    ],
+    [
+      "{",
+      "}"
+    ]
+  ], // Определение парных скобок
+  "editor.language.colorizedBracketPairs": [
+    [
+      "[",
+      "]"
+    ],
+    [
+      "{",
+      "}"
+    ]
+  ], // Цветовые пары скобок
+  "editor.matchBrackets": "always", // Всегда показывать соответствующие скобки
+  // Автодополнение для JSON
+  "editor.quickSuggestions": {
+    "strings": true, // Предложения в строках
+    "comments": true, // Предложения в комментариях
+    "other": true // Другие предложения
+  },
+
+  // =====================================================
+  // other settings
+  // =====================================================
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.experimental.useTrueInlineView": true,
+  "workbench.commandPalette.experimental.suggestCommands": true,
+  "terminal.integrated.suggest.enabled": true,
+  "timeline.pageOnScroll": true,
+  "prettier.experimentalTernaries": true
+
+}

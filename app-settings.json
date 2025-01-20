@@ -1,0 +1,72 @@
+{
+  "window.newWindowProfile": "Extended fronted",
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features" // Форматировать CSS с помощью встроенного формата
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматировать XML с помощью Prettier
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features" // Форматировать HTML с помощью встроенного формата
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Форматировать JavaScript с помощью Prettier
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features" // Форматировать Markdown с помощью встроенного формата
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" // Форматировать TypeScript с помощью Prettier и ESLint
+  },
+
+  "telemetry.enableTelemetry": false, // Отключить телеметрию
+  "telemetry.telemetryLevel": "off", // Полностью отключить телеметрию (новая настройка, заменяющая telemetry.enableTelemetry)
+  "workbench.enableExperiments": false, // Отключить эксперименты
+  "update.showReleaseNotes": false, // Отключить показ примечаний к выпуску
+  "window.customTitleBarVisibility": "windowed", // Новая настройка видимости пользовательской строки заголовка
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.quickSuggestions": {
+      "strings": true, // Включить быстрые предложения в строках
+      "comments": true, // Включить предложения в комментариях
+      "other": true // Включить другие предложения
+    },
+    "editor.suggestSelection": "recentlyUsed", // Предлагать недавно использованные варианты
+    "editor.suggest.insertMode": "replace", // Режим вставки предложений
+    "editor.snippetSuggestions": "top", // Показывать сниппеты вверху
+    "editor.formatOnSave": true, // Форматировать при сохранении
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit" // Исправлять все проблемы при сохранении
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.quickSuggestions": {
+      "strings": true,
+      "comments": true,
+      "other": true
+    },
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.insertMode": "replace",
+    "editor.snippetSuggestions": "inline",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
+}
